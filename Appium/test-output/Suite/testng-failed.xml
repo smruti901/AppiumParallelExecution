@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="runner1(failed)">
+    <parameter name="deviceId" value="emulator-5554"/>
+    <classes>
+      <class name="AppiumPractice.ParallelExecution">
+        <methods>
+          <include name="GeneralStore"/>
+        </methods>
+      </class> <!-- AppiumPractice.ParallelExecution -->
+    </classes>
+  </test> <!-- runner1(failed) -->
+  <test thread-count="2" parallel="tests" name="runner2(failed)">
+    <parameter name="deviceId" value="fd09ceee0407"/>
+    <classes>
+      <class name="AppiumPractice.ParallelExecution">
+        <methods>
+          <include name="GeneralStore"/>
+        </methods>
+      </class> <!-- AppiumPractice.ParallelExecution -->
+    </classes>
+  </test> <!-- runner2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
